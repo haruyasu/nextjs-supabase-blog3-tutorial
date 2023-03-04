@@ -3,10 +3,18 @@ export interface BlogListType {
   created_at: string
   title: string
   content: string
-  user_id: string
   image_url: string
-  name: string | null
-  avatar_url: string | null
+  profiles: ProfileType
+}
+
+export interface BlogDetailType {
+  id: string
+  created_at: string
+  title: string
+  content: string
+  image_url: string
+  profile_id: string
+  profiles: ProfileType
   comments: CommentType[]
 }
 
@@ -15,6 +23,7 @@ export interface LikeType {
 }
 
 export interface ProfileType {
+  id: string
   avatar_url: string | null
   name: string | null
 }
@@ -25,4 +34,10 @@ export interface CommentType {
   created_at: string
   profiles: ProfileType
   likes: LikeType[]
+}
+
+export interface SearchType {
+  searchParams: {
+    page: string
+  }
 }

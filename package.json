@@ -14,6 +14,7 @@
     "next": "13.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-paginate": "^8.1.4",
     "server-only": "^0.0.1",
     "sharp": "^0.31.3",
     "supabase": "^1.34.5",

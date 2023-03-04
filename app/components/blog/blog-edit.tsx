@@ -28,7 +28,7 @@ const BlogEdit = ({ blog }: PageProps) => {
 
   useEffect(() => {
     // 自分が投稿したブログチェック
-    if (user.id !== blog.user_id) {
+    if (user.id !== blog.profile_id) {
       // ブログ詳細に遷移
       router.push(`/blog/${blog.id}`)
     } else {

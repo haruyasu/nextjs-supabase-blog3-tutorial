@@ -37,13 +37,13 @@ const BlogItem = (blog: BlogListType) => {
 
       <div className="flex items-center space-x-3">
         <Image
-          src={blog.avatar_url ? blog.avatar_url : '/default.png'}
+          src={blog.profiles.avatar_url ? blog.profiles.avatar_url : '/default.png'}
           className="rounded-full"
           alt="avatar"
           width={45}
           height={45}
         />
-        <div className="font-bold">{blog.name}</div>
+        <div className="font-bold">{blog.profiles.name}</div>
       </div>
     </div>
   )

@@ -53,7 +53,7 @@ const BlogNew = () => {
         title: titleRef.current.value,
         content: contentRef.current.value,
         image_url: urlData.publicUrl,
-        user_id: user.id,
+        profile_id: user.id,
       })
 
       if (insertError) {
